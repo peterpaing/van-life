@@ -9,6 +9,7 @@ body{
     height: 100%;
     font-family: "Inter", sans-serif;
     background-color: #FFF7ED;
+    color:#FFFFFF;
 }
 
 header{
@@ -46,5 +47,51 @@ header{
             color: #161616;
             
         }
+    }
+}
+
+main{
+    width: 100%;
+
+    .home-section{
+        padding: 160px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/src/assets/home-section-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h2{
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 42px;
+            }
+
+        p{
+            margin: 30px 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        button{
+            width: 80%;
+            margin-top: 40px;
+            padding: 5px 0;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 15.95px;
+            line-height: 31.66px;
+            letter-spacing: 0%;
+            text-align: center;
+            color:#FFFFFF;
+            background-color: #FF8C38;
+            border: none;
+            border-radius: 5px;
+        }
+
     }
 }
