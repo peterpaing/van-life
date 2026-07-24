@@ -78,6 +78,7 @@ main {
 
         button {
             width: 80%;
+            max-width: 31.25rem; 
             margin-top: 2.5em;
             padding: 0.3125em 0; 
             font-family: "Inter", sans-serif;
@@ -91,7 +92,6 @@ main {
             border: none;
             border-radius: 0.3125em; 
         }
-
     }
 }
 
@@ -108,5 +108,104 @@ footer {
         font-weight: 500;
         font-size: 0.875rem; 
         line-height: 1.64;
+    }
+}
+
+/* 480px and 1559px converted to em for accessibility */
+@media (30em < width <= 97.4375em) {
+
+    header {
+        height: 9.375rem; /* 150px / 16 */
+        padding: 0 2em;
+
+        h1 {
+            font-size: 3rem; 
+        }
+
+        nav {
+            justify-content: space-around;
+            
+            a {
+                font-size: 1.6rem;
+            }
+            .user-icon {
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    main {
+         .home-section {
+            padding: 12em 3.5em;
+
+            h2 {
+                font-size: 3.5rem;
+            }
+
+            p {  
+               font-size: 2rem;
+            }
+
+            button {
+                padding: 0.6em 0;
+                font-size: 1.3rem;
+            }
+         }   
+    }
+
+    footer {
+        height: 9.375rem; 
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (width > 97.4375em) {
+
+    header {
+        height: 9.375rem;
+        padding: 0 2em;
+
+        h1 {
+            font-size: 3.5rem; 
+        }
+
+        nav {
+            justify-content: space-around;
+            
+            a {
+                font-size: 1.8rem;
+            }
+            .user-icon {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    main {
+         .home-section {
+            padding: 20em 3.5em;
+
+            h2 {
+                font-size: 4rem;
+            }
+
+            p {  
+               font-size: 2rem;
+            }
+
+            button {
+                padding: 0.6em 0;
+                font-size: 1.5rem;
+            }
+         }   
+    }
+
+    footer {
+        height: 10rem; 
+        p {
+            font-size: 1.5rem;
+        }
     }
 }
