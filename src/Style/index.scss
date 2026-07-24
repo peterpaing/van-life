@@ -1,165 +1,208 @@
+$bg-color: #FFF7ED;
+$white: #FFFFFF;
+$black: #000000;
+$text-dark: #161616;
+$text-gray: #4D4D4D;
+$footer-bg: #252525;
+$footer-text: #AAAAAA;
+$orange: #FF8C38;
+
+$font-family: "Inter", sans-serif;
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 body {
     width: 100%;
     height: 100%;
-    font-family: "Inter", sans-serif;
-    background-color: #FFF7ED;
-    color: #FFFFFF;
+    font-family: $font-family;
+    background-color: $bg-color;
+    color: $white;
 }
+
 
 header {
     width: 100%;
     height: 6.25rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem; 
+
+    padding: 0 1.5rem;
 
     h1 {
         font-weight: 900;
-        color: Black;
-        font-size: 1.584rem; 
-        line-height: 1.59; 
+        color: $black;
+        font-size: 1.584rem;
+        line-height: 1.59;
     }
 
     nav {
         width: 50%;
-        margin-top: 0.3125em; 
+
+        margin-top: 0.3125em;
+
         display: flex;
         justify-content: space-between;
-        
+
         a {
-            font-family: "Inter", sans-serif;
+            font-family: $font-family;
             font-weight: 600;
-            font-size: 1rem; 
-            line-height: 1.43; 
+            font-size: 1rem;
+            line-height: 1.43;
+
             text-decoration: none;
-            color: #4D4D4D;
+            color: $text-gray;
         }
 
         .user-icon {
-            font-size: 1.25rem; 
-            color: #161616;
+            font-size: 1.25rem;
+            color: $text-dark;
         }
     }
 }
+
 
 main {
     width: 100%;
 
     .home-section {
-        padding: 10rem 1rem; 
-        display: flex;
+        padding: 10rem 1rem;
+
+        @include flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                          url('/src/assets/home-section-bg.png');
+
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ), url('/src/assets/home-section-bg.png');
+
         background-repeat: no-repeat;
         background-size: cover;
 
         h2 {
             font-weight: 800;
-            font-size: 1.875rem; 
-            line-height: 1.4; 
+            font-size: 1.875rem;
+            line-height: 1.4;
         }
 
         p {
-            margin: 1.76em 0; 
+            margin: 1.76em 0;
+
             font-weight: 500;
-            font-size: 1.0625rem; 
-            line-height: 1.41; 
+            font-size: 1.0625rem;
+            line-height: 1.41;
         }
 
         button {
             width: 80%;
-            max-width: 31.25rem; 
+            max-width: 31.25rem;
+
             margin-top: 2.5em;
-            padding: 0.3125em 0; 
-            font-family: "Inter", sans-serif;
+
+            padding: 0.3125em 0;
+
+            font-family: $font-family;
             font-weight: 700;
-            font-size: 1rem; 
-            line-height: 1.98; 
-            letter-spacing: 0;
+            font-size: 1rem;
+
+            line-height: 1.98;
             text-align: center;
-            color: #FFFFFF;
-            background-color: #FF8C38;
+
+            color: $white;
+            background-color: $orange;
+
             border: none;
-            border-radius: 0.3125em; 
+            border-radius: 0.3125em;
         }
     }
 }
 
+
 footer {
     width: 100%;
-    height: 6.25rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #AAAAAA;
-    background-color: #252525;
+    height: 6.25rem;
+
+    @include flex-center;
+
+    color: $footer-text;
+    background-color: $footer-bg;
 
     p {
         font-weight: 500;
-        font-size: 0.875rem; 
+        font-size: 0.875rem;
         line-height: 1.64;
     }
 }
 
-/* 480px and 1559px converted to em for accessibility */
+
 @media (30em < width <= 97.4375em) {
 
     header {
-        height: 9.375rem; /* 150px / 16 */
+        height: 9.375rem;
         padding: 0 2em;
 
         h1 {
-            font-size: 3rem; 
+            font-size: 3rem;
         }
 
         nav {
             justify-content: space-around;
-            
+
             a {
                 font-size: 1.6rem;
             }
+
             .user-icon {
                 font-size: 2.3rem;
             }
         }
     }
 
+
     main {
-         .home-section {
+
+        .home-section {
             padding: 12em 3.5em;
 
             h2 {
                 font-size: 3.5rem;
             }
 
-            p {  
-               font-size: 2rem;
+            p {
+                font-size: 2rem;
             }
 
             button {
                 padding: 0.6em 0;
                 font-size: 1.3rem;
             }
-         }   
+        }
     }
 
+
     footer {
-        height: 9.375rem; 
+        height: 9.375rem;
+
         p {
             font-size: 1.5rem;
         }
     }
 }
+
 
 @media (width > 97.4375em) {
 
@@ -168,42 +211,47 @@ footer {
         padding: 0 2em;
 
         h1 {
-            font-size: 3.5rem; 
+            font-size: 3.5rem;
         }
 
         nav {
             justify-content: space-around;
-            
+
             a {
                 font-size: 1.8rem;
             }
+
             .user-icon {
                 font-size: 2.5rem;
             }
         }
     }
 
+
     main {
-         .home-section {
+
+        .home-section {
             padding: 20em 3.5em;
 
             h2 {
                 font-size: 4rem;
             }
 
-            p {  
-               font-size: 2rem;
+            p {
+                font-size: 2rem;
             }
 
             button {
                 padding: 0.6em 0;
                 font-size: 1.5rem;
             }
-         }   
+        }
     }
 
+
     footer {
-        height: 10.8rem; 
+        height: 10.8rem;
+
         p {
             font-size: 1.8rem;
         }
