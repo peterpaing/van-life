@@ -1,13 +1,15 @@
 import { Outlet } from "react-router";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout(){
     return (
-        <>
-        <Header/>
-        <main>
-        <Outlet/>
-        </main>
-        </>
+        <div className="site-wrapper">
+          <Header />
+          <main>
+            <Outlet />
+            <Footer />
+          </main>
+        </div>
     )
 }
