@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #FFF7ED;
+}
+
+header{
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+    h1{
+        font-weight: 900;
+        color: Black;
+        font-size: 25.35px;
+        line-height: 40.27px;
+    }
+
+    nav{
+        width: 50%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        
+        a{
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22.92px;
+            text-decoration: none;
+            color:#4D4D4D;
+        }
+
+        .user-icon{
+            font-size: 20px;
+            color: #161616;
+            
+        }
+    }
+}
