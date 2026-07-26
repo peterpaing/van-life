@@ -7,6 +7,7 @@ $footer-bg: #252525;
 $footer-text: #AAAAAA;
 $orange: #FF8C38;
 $light-orange:#FFCC8D;
+$van-type-text:#FFEAD0;
 $font-family: "Inter", sans-serif;
 
 
@@ -181,6 +182,58 @@ main {
         }
     }
     }
+    .vans-data{
+        margin: 2em 0;
+        
+        h2{
+            margin-left: 0.7em;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color:$text-dark;
+            line-height: 33.65px;
+        }
+
+    .vans{
+        width: 100%;
+        margin: 1.8em 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        column-gap: 0.3em;
+        row-gap: 2em;
+        color:$text-dark;
+
+    .van-container{
+
+        img{
+            width: 200px;
+            border-radius: 0.5em;
+        }
+
+        p{
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 31.66px;
+            letter-spacing: 0%;
+        }
+
+        span{
+            
+            font-weight: 500;
+            font-size: 1.1rem;
+            line-height: 31.66px;
+        }
+
+        .type{
+           color:$van-type-text;
+           width: 85px;
+           font-size: 1rem;
+           text-align: center;
+           border-radius: 0.3em;
+        }
+    }
+    }
+}
 }
 
 
