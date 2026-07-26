@@ -153,10 +153,12 @@ main {
         }
 
     .van-explore-container{
-        width: 100%;
+        width: 95%;
         height: 190px;
+        margin: 1em auto ;
         background-color: $light-orange;
         padding: 2em;
+        border-radius: 1em;
     
 
         h3{
@@ -365,7 +367,7 @@ footer {
         }
         .van-explore-container{
             width: 50%;
-            height: 564px;
+            height: 530px;
             display: flex;
             flex-direction: column;
             justify-content: center;
