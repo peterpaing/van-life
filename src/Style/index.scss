@@ -106,7 +106,7 @@ main {
             line-height: 1.41;
         }
 
-        button {
+        a {
             width: 80%;
             max-width: 31.25rem;
 
@@ -126,6 +126,7 @@ main {
 
             border: none;
             border-radius: 0.3125em;
+            text-decoration: none;
         }
     }
 
@@ -291,7 +292,7 @@ footer {
                 font-size: 2rem;
             }
 
-            button {
+            a {
                 padding: 0.6em 0;
                 font-size: 1.3rem;
             }
@@ -317,7 +318,7 @@ footer {
 
         .van-explore-container{
             width: 60%;
-        height: 250px;
+            height: 250px;
         
         h3{
            
@@ -425,7 +426,7 @@ footer {
                 font-size: 2.52rem;
             }
 
-            button {
+            a {
                 padding: 0.6em 0;
                 font-size: 1.5rem;
             }
