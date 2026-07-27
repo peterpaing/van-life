@@ -3,6 +3,7 @@ import Layout  from "./Components/Layout";
 import HomeLayout from "./Pages/HomeLayout";
 import About from "./Pages/About"
 import Vans from "./Pages/Vans"
+import VanDetails from "./Pages/VanDetails"
 
 export default function App(){
 
@@ -13,6 +14,7 @@ export default function App(){
             <Route index element={<HomeLayout/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/vans" element={<Vans/>}/>
+            <Route path="/vans/:id" element={<VanDetails/>}/>
             </Route>
             </Routes>
             </BrowserRouter>

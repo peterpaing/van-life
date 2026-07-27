@@ -1,5 +1,6 @@
 import {useState,useEffect} from 'react'
 import '../sever'
+import { Link } from 'react-router'
 
 export default function Vans(){
 
@@ -30,10 +31,12 @@ export default function Vans(){
 
         return (
             <div className='van-container' key={van.id}>
+                <Link to={`/vans/${van.id}`}>
                 <img src={van.imageUrl} alt={`${van.name} image`}/>
                 <p>{van.name}</p>
                 <span>${van.price}/day</span>
                 <p className='type' style={typeColor}>{van.type}</p>
+                </Link>
             </div>
         )
     })
