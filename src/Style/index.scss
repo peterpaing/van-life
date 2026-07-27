@@ -232,9 +232,74 @@ main {
            text-align: center;
            border-radius: 0.3em;
         }
+
+        a{
+            text-decoration: none;
+            color:$text-dark;
+        }
     }
     }
 }
+        .van-details{
+            margin: 2.5em 0;
+
+                a{  
+                    margin: 1.2em;
+                    color:$text-dark;
+                    display: flex;
+                    align-items: center;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 22.92px;
+                    gap:0.5em
+                }
+
+                img{
+                    width: 400px;
+                    display: block;
+                    margin: auto;
+                    border-radius: 0.4em;
+                }
+
+                .van-type{
+                    display: inline-block;
+                    width: 85px;
+                    height: 33px;
+                    margin: 1.8em;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    color:$van-type-text;
+                    line-height: 31.66px;
+                    border-radius: 0.3em;
+                }
+
+                h3{
+                    margin-left: 1em;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 33.65px;
+                    color:$text-dark;
+                }
+
+                span{
+                    margin: 1em 1.7em;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                    line-height: 44.15px;
+                    color:$text-dark;
+
+                }
+
+                p{  
+                    margin: 0 1.8em ;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 23.92px;
+                    color:$text-dark;
+                }
+            }
 }
 
 
@@ -521,8 +586,9 @@ footer {
            margin-left: 0.8em;
            display: inline-block;
         }
-    }
-    }
+
+        }
+        }
 }
     
 }

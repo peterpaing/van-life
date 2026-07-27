@@ -1,5 +1,6 @@
 import { useEffect,useState  } from "react"
-import { useParams} from "react-router"
+import { useParams,Link} from "react-router"
+import { FaArrowLeft } from "react-icons/fa"
 
 export default function VanDetails(){
     const [van , setVan] = useState({})
@@ -27,8 +28,9 @@ export default function VanDetails(){
 
     return (
         <div className="van-details">
+            <Link to="/vans"><FaArrowLeft/>Back to all vans</Link>
             <img src={van.imageUrl} alt={`${van.name} image`}/>
-            <p style={typeColor}>{van.type}</p>
+            <p style={typeColor} className="van-type">{van.type}</p>
             <h3>{van.name}</h3>
             <span>${van.price}/day</span>
             <p>{van.description}</p>
