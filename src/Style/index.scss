@@ -9,6 +9,7 @@ $orange: #FF8C38;
 $light-orange: #FFCC8D;
 $van-type-text: #FFEAD0;
 $font-family: "Inter", sans-serif;
+$host-rating-bg:#FFDDB2;
 
 * {
     box-sizing: border-box;
@@ -165,23 +166,104 @@ main {
             }
         }
     }
+    .host{
+        color:$text-dark;
 
-    .host-nav{
-    width: 100%;
-    margin-top: 0.3125em;
-    display: flex;
-    justify-content: space-around;
+        .host-nav{
+        width: 100%;
+        margin-top: 0.3125em;
+        display: flex;
+        justify-content: space-around;
 
-    a {
-        font-family: $font-family;
-        font-weight: 600;
-        font-size: 1rem;
-        line-height: 1.43;
-        color: $text-gray;
-        text-decoration: none;
+        a {
+            font-family: $font-family;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.43;
+            color: $text-gray;
+            text-decoration: none;
+        }
+    }
+
+    .income{
+        margin-top: 2.5em;
+        padding: 3em 1em;
+        display: flex;
+        flex-direction: column;
+        gap:1.5em;
+        background-color: $van-type-text;
+
+        h2{
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 2rem;
+            line-height: 1.8rem;
+        }
+
+        span{
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 22px;
+            color: $text-gray;
+        }
+        p{
+           font-weight: 800;
+            font-size: 2.5rem;
+            line-height: 38px;
+        }
+    }
+
+    .rating{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em;
+        background-color: $host-rating-bg;
+        gap:1.8em;
+
+        h3{
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 24px;
+            line-height: 22px;
+        }
+
+        span{
+            font-weight: 500;
+            font-style: Bold;
+            font-size: 1.2em;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            gap:0.5em;
+        }
+
+        .star{
+            color:$orange;
+        }
+    }
+
+    .listed-vans{
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 1em;
+
+        h3{
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 1.5rem;
+            line-height: 22px;
+        }
+
+        a{
+            display: inline-block;
+            margin-right: 1em;
+            color:$text-dark;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 }
-
     .vans-data {
         margin: 2em 0;
 
