@@ -204,6 +204,16 @@ main {
         row-gap: 2em;
         color:$text-dark;
 
+    .loading{
+            grid-column: 1 / -1;
+            justify-self: center;
+            font-size: 1.2rem;
+            color:$text-dark;
+            @include flex-center;
+            gap:0.8em;
+            
+    }
+
     .van-container{
 
         img{
@@ -237,6 +247,7 @@ main {
             text-decoration: none;
             color:$text-dark;
         }
+        
     }
     }
 }
@@ -299,6 +310,14 @@ main {
                     line-height: 23.92px;
                     color:$text-dark;
                 }
+
+                .loading{
+                    margin-top: 2em;
+                    font-size: 1.1rem;
+                    color:$text-dark;
+                    @include flex-center;
+                    gap:0.8em;
+                }
             }
 }
 
@@ -318,6 +337,20 @@ footer {
         line-height: 1.64;
     }
 }
+
+.spin{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 @media (30em < width <= 97.4375em) {

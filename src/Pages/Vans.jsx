@@ -1,12 +1,15 @@
 import {useState,useEffect} from 'react'
 import '../sever'
 import { Link } from 'react-router'
+import { AiOutlineLoading3Quarters } from "react-icons/ai"
 
 export default function Vans(){
 
     const [vanData , setVanData]= useState([])
+    const[isLoading , setIsLoading] = useState(true)
 
     const vans = async()=>{
+        setIsLoading(true)
     try{
          const response= await fetch('/api/vans')
        const data = await response.json()
@@ -14,6 +17,8 @@ export default function Vans(){
        console.log(data)
        }catch(err){
         console.log(`fetching error : ${err}`)
+       }finally{
+        setIsLoading(false)
        }
     }
 
@@ -45,7 +50,7 @@ export default function Vans(){
         <section className='vans-data'>
         <h2>Explore our van options</h2>
         <div className='vans'>
-        {renderVans}
+        {isLoading ?<p className="loading"><AiOutlineLoading3Quarters className="spin"/>Loading...</p> : renderVans}
         </div>
         </section>
     )
