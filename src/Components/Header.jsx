@@ -1,4 +1,4 @@
-import { NavLink } from "react-router"
+import { NavLink,Link } from "react-router"
 import { FaRegCircleUser } from "react-icons/fa6";
 
 export default function Header(){
@@ -10,9 +10,9 @@ export default function Header(){
 
     return (
         <header>
-            <h1>#VANLIFE</h1>
+            <Link to="/"><h1>#VANLIFE</h1></Link>
             <nav>
-            <NavLink to="/" style={({ isActive }) => isActive ? activeStyles : undefined}>Host</NavLink>
+            <NavLink to="/host" style={({ isActive }) => isActive ? activeStyles : undefined}>Host</NavLink>
             <NavLink to="/about" style={({ isActive }) => isActive ? activeStyles : undefined}>About</NavLink>
             <NavLink to="/vans" style={({ isActive }) => isActive ? activeStyles : undefined}>Vans</NavLink>
             <NavLink to="/login" style={({ isActive }) => isActive ? activeStyles : undefined}>
