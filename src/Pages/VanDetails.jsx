@@ -43,6 +43,7 @@ export default function VanDetails(){
             <h3>{van.name}</h3>
             <span>${van.price}/day</span>
             <p>{van.description}</p>
+            <button>Rent this van</button>
             </>
             )}
         </div>
