@@ -497,6 +497,60 @@ footer {
                 }
             }
         }
+      .host{
+        color:$text-dark;
+
+        .host-nav{
+        margin-top: 4em;
+        
+
+        a {
+          font-size: 1.8rem;
+        }
+    }
+
+    .income{
+        padding: 4em 4em;
+        gap:3.1em;
+        
+        h2{
+           font-size: 3rem;
+        }
+
+        span{
+            font-size: 1.8rem;
+        }
+
+        p{
+          font-size: 3rem;
+        }
+    }
+
+    .rating{
+        padding: 5em 4em;
+        gap:8em;
+
+        h3{
+           font-size: 1.8rem;
+        }
+
+        span{
+            font-size: 1.5em;
+        }
+    }
+
+    .listed-vans{
+        padding: 4em 4em;
+
+        h3{
+            font-size: 1.8rem;
+        }
+
+        a{
+          font-size: 1.5rem;
+        }
+    }
+}   
 
         .vans-data {
             margin: 2em 0;
@@ -676,6 +730,61 @@ footer {
                 }
             }
         }
+
+      .host{
+        color:$text-dark;
+
+        .host-nav{
+        margin-top: 4em;
+        
+
+        a {
+          font-size: 1.8rem;
+        }
+    }
+
+    .income{
+        padding: 4em 5em;
+        gap:3.1em;
+        
+        h2{
+           font-size: 3rem;
+        }
+
+        span{
+            font-size: 1.8rem;
+        }
+
+        p{
+          font-size: 3rem;
+        }
+    }
+
+    .rating{
+        padding: 5em 4em;
+        gap:8em;
+
+        h3{
+           font-size: 2rem;
+        }
+
+        span{
+            font-size: 1.8em;
+        }
+    }
+
+    .listed-vans{
+        padding: 4em 4em;
+
+        h3{
+            font-size: 1.8rem;
+        }
+
+        a{
+          font-size: 1.5rem;
+        }
+    }
+}    
 
         .vans-data {
             margin: 5em 0;
