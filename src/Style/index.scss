@@ -244,9 +244,13 @@ main {
 
     .listed-vans{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         padding: 2em 1em;
-
+    
+        .listed-van-headline{
+            display: flex;
+             justify-content: space-between;
+        
         h3{
             font-weight: 700;
             font-style: Bold;
@@ -261,6 +265,29 @@ main {
             font-weight: 500;
             font-size: 16px;
             line-height: 22px;
+        }
+        }
+        .saved-van{
+            margin-top: 2em;
+            display: flex;
+            gap:1.5em;
+
+            img{
+                width: 100px;
+                border-radius: 0.4em;
+            }
+
+            p{
+               font-weight: 600;
+               font-size: 1.2rem;
+               line-height: 31.66px;
+            }
+
+            span{
+               font-weight: 500;
+                font-size: 1rem;
+                line-height: 31.66px;
+            }
         }
     }
 }
