@@ -298,6 +298,33 @@ main {
             
         }
     }
+
+    .income-container{
+        img{
+            padding: 2em 1em 1em 1em;
+            width: 100%;
+        }
+
+        .transactions{
+            padding: 1em 2em 1em 0.8em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .transactions-records{
+            margin: 1.4em 0;
+            padding:1.8em;
+            display: flex;
+            justify-content: space-between;
+            background-color: $white;
+
+            p{
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 31.66px;
+            }
+        }
+    }
 }
     .vans-data {
         margin: 2em 0;
@@ -634,6 +661,7 @@ footer {
             font-size: 1.8rem;
         }
     }
+    
     }
     }   
 
