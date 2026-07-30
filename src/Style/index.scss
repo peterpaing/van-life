@@ -247,6 +247,12 @@ main {
         flex-direction: column;
         padding: 2em 1em;
     
+        h4{
+                margin-top: 3em;
+                font-size: 1rem;
+                text-align: center;
+            }
+
         .listed-van-headline{
             display: flex;
              justify-content: space-between;
@@ -288,6 +294,8 @@ main {
                 font-size: 1rem;
                 line-height: 31.66px;
             }
+
+            
         }
     }
 }
@@ -589,6 +597,7 @@ footer {
         margin-bottom: 2em;
        padding: 4em 4em;
        
+       
         .listed-van-headline{
            
         h3{
@@ -601,10 +610,8 @@ footer {
         }
         }
 
-        .vans-container{
-           
-        
-        .saved-van{
+        .vansaved-container{
+         .saved-van{
             align-items: center;
             gap:1.5em;
 
@@ -621,6 +628,10 @@ footer {
             span{
                font-size: 1.5rem;
             }
+        }
+
+        h4{
+            font-size: 1.8rem;
         }
     }
     }
@@ -855,8 +866,8 @@ footer {
 
     .listed-vans{
         margin-bottom: 2em;
-       padding: 4em 4em;
-       
+        padding: 4em 4em;
+        
         .listed-van-headline{
            
         h3{
@@ -869,7 +880,7 @@ footer {
         }
         }
 
-        .vans-container{
+        .vansaved-container{
             margin-top: 4em;
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -892,6 +903,10 @@ footer {
             span{
                font-size: 1.5rem;
             }
+        }
+        h4{
+            grid-column: span 3;
+            font-size: 1.8em;
         }
     }
     }
@@ -934,6 +949,7 @@ footer {
                         margin-left: 0.8em;
                         display: inline-block;
                     }
+                   
                 }
             }
         }
