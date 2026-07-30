@@ -46,7 +46,9 @@ const van = savedVans.map(van => (
                 <h3>Your listed vans</h3>
                 <Link to="/vans">View all</Link>
                 </div>
+                <div className="vans-container">
                 {savedVans ? van :<h4>There is no saved vans</h4>}
+                </div>
             </div>
         </section>
     )
