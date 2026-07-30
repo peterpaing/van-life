@@ -2,12 +2,18 @@ import { useEffect,useState  } from "react"
 import { useParams,Link} from "react-router"
 import { FaArrowLeft } from "react-icons/fa"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
-
+import clsx from 'clsx'
 
 export default function VanDetails(){
     const [van , setVan] = useState({})
     const[isLoading , setIsLoading] = useState(true)
     const param = useParams()
+    
+    const savedDataString = localStorage?.getItem(`van${param?.id}`)
+    const savedData = savedDataString ? JSON.parse(savedDataString) : {}
+    const checkSaved = savedData.id === param?.id
+
+    const [isSaved,setIsSaved] = useState(checkSaved)
 
     const vanData = async () => {
         setIsLoading(true)
@@ -32,6 +38,15 @@ export default function VanDetails(){
         ? { backgroundColor: '#161616' } 
         : { backgroundColor: '#115E59' }
 
+        function rentVan(){
+            localStorage.setItem(`van${param?.id}`, JSON.stringify(van))
+            setIsSaved(true)
+        }
+
+        function removeVan(){
+            localStorage.removeItem(`van${param?.id}`)
+            setIsSaved(false)
+        }
     return (
         <div className="van-details">
             <Link to="/vans"><FaArrowLeft/>Back to all vans</Link>
@@ -43,7 +58,8 @@ export default function VanDetails(){
             <h3>{van.name}</h3>
             <span>${van.price}/day</span>
             <p>{van.description}</p>
-            <button>Rent this van</button>
+            {isSaved ?<button onClick={removeVan} className={clsx(isSaved?'remove':'')}>Remove this van</button>:
+            <button onClick={rentVan}>Rent this van</button>}
             </>
             )}
         </div>
