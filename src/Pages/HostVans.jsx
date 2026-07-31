@@ -1,40 +1,40 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import VanCard from "../Components/VanCard"
-import { AiOutlineLoading3Quarters } from "react-icons/ai"
+
 
 export default function HostVans() {
-    const [vanData, setVanData] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+    const [vanData] = useState(() => {
+        const vans = []
 
-    const vans = async () => {
-        setIsLoading(true)
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i)
 
-        try {
-            const response = await fetch("/api/vans")
-            const data = await response.json()
-            setVanData(data.vans)
-        } catch (err) {
-            console.log(`fetching error : ${err}`)
-        } finally {
-            setIsLoading(false)
+            if (key && key.startsWith("van")) {
+                const van = JSON.parse(localStorage.getItem(key))
+                vans.push(van)
+            }
         }
-    }
 
-    useEffect(() => {
-        vans()
-    }, [])
+        return vans
+    })
+
+    
 
     const renderVans = vanData.map(van => (
         <VanCard key={van.id} van={van} />
     ))
 
-    return (
-        <section className="host-vans-container">
-            <h3>Your listed vans</h3>
+  return (
+    <section className="host-vans-container">
+        <h3>Your listed vans</h3>
 
-            <div className="host-vans-list">
-                {isLoading ? <p className="loading"><AiOutlineLoading3Quarters className="spin"/>Loading...</p> : renderVans}
-            </div>
-        </section>
-    )
+        <div className="vansaved-container">
+            {vanData.length > 0 ? (
+                renderVans
+            ) : (
+                <h4>There are no saved vans</h4>
+            )}
+        </div>
+    </section>
+)
 }

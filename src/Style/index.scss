@@ -349,13 +349,10 @@ main {
             line-height: 22px;
         }
         .host-vans-list{
-            .loading{
-                margin-top: 2em;
-                font-weight: 500;
-                font-size: 1.2rem;
+            h4{
+                margin-top: 3em;
+                font-size: 1rem;
                 text-align: center;
-                @include flex-center;
-                gap:1em;
             }
         }
         .saved-van{
