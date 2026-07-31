@@ -808,6 +808,88 @@ footer {
             }
         }
     }
+    
+        .host-vans-container{
+        padding: 0 4.5em;
+        
+        
+        h3{
+           font-size: 2rem;
+        }
+
+        .host-vans-list{
+            h4{
+               font-size: 2rem;
+            }
+        }
+        .vansaved-container{
+            margin-top: 4em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .saved-van{
+            margin-top: 1.5em;
+            align-items: center;
+            justify-content: center;
+            
+            img{
+                width: 300px;
+            }
+
+            p{
+               margin-bottom: 0.5em;
+                font-size: 1.8rem;
+                line-height: 31.66px;
+            }
+
+            span{
+                font-size: 1.5rem;
+            } 
+        }
+    }
+
+    .review-container{
+        margin: 4em 0 2em 0;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+           font-size: 2rem;
+            
+
+            span{
+              font-size: 1.3rem;
+            }
+        }
+
+        img{
+            width: 60%;
+            margin: 5em auto;
+        }
+
+        .review-text-container{
+            
+            img{
+                width: 150px;
+            }
+
+            h4{
+                margin: 0.5em 0 ;
+               font-size: 1.5rem;
+                
+
+                span{
+                font-size: 1.2rem;
+                }
+            }
+            p{  
+                font-size: 1.5rem;
+                line-height: 160%;
+            }
+        }
+    }
     }   
 
         .vans-data {
@@ -1123,6 +1205,87 @@ footer {
                 font-weight: 500;
                 font-size: 1.5rem;
                 line-height: 31.66px;
+            }
+        }
+    }
+
+        .host-vans-container{
+        padding: 0 4.5em;
+        
+        
+        h3{
+           font-size: 3rem;
+        }
+
+        .host-vans-list{
+            h4{
+               font-size: 2rem;
+            }
+        }
+        .vansaved-container{
+            margin-top: 4em;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .saved-van{
+            margin-top: 2em;
+            align-items: center;
+            justify-content: center;
+            
+            img{
+                width: 300px;
+            }
+
+            p{
+               margin-bottom: 0.5em;
+                font-size: 1.8rem;
+                line-height: 31.66px;
+            }
+
+            span{
+                font-size: 1.5rem;
+            } 
+        }
+    }
+
+    .review-container{
+        margin: 4em 0 2em 0;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+           font-size: 2.5rem;
+            
+
+            span{
+              font-size: 1.5rem;
+            }
+        }
+
+        img{
+            width: 40%;
+            margin: 5em auto;
+        }
+
+        .review-text-container{
+            
+            img{
+                width: 200px;
+            }
+
+            h4{
+                margin: 1em 0 ;
+               font-size: 1.8rem;
+                
+
+                span{
+                font-size: 1.5rem;
+                }
+            }
+            p{  
+                font-size: 1.5rem;
+                line-height: 160%;
             }
         }
     }
