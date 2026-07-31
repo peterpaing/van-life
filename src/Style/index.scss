@@ -11,6 +11,7 @@ $van-type-text: #FFEAD0;
 $font-family: "Inter", sans-serif;
 $host-rating-bg:#FFDDB2;
 $remove : #E05D5D;
+$border-color: #C7C7C7;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -376,6 +377,55 @@ main {
                 font-size: 1rem;
                 line-height: 31.66px;
             }
+        }
+    }
+
+    .review-container{
+        margin: 1em 0 2em 0;
+        padding: 1em;
+
+        h2{
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 22px;
+
+            span{
+                margin-left: 1em;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 22px;
+                color: $text-gray;
+            }
+        }
+
+        img{
+            width: 100%;
+            margin: 2em 0 0.5em 0;
+        }
+
+        .review-text-container{
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid $border-color;
+            img{
+                width: 100px;
+                margin: 0.5em 0;
+            }
+
+            h4{
+                font-weight: 700;
+                font-size: 1.2rem;
+                line-height: 22px;
+
+                span{
+                    margin-left: 1em;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 22px;
+                    color: $text-gray;
+                }
+            }
+
         }
     }
 }

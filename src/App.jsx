@@ -8,6 +8,7 @@ import Host from "./Pages/Host"
 import Dashboard from "./Pages/Dashboard"
 import Income from "./Pages/Income"
 import HostVans from "./Pages/HostVans"
+import Reviews from "./Pages/Reviews"
 
 export default function App(){
 
@@ -24,6 +25,7 @@ export default function App(){
                 <Route index element={<Dashboard />} />
                 <Route path="income" element={<Income />} />
                 <Route path="vans" element={<HostVans />} />
+                <Route path="reviews" element={<Reviews />} />
             </Route>
         </Route>
     </Routes>
