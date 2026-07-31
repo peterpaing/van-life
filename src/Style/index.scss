@@ -349,7 +349,7 @@ main {
             font-size: 1.5rem;
             line-height: 22px;
         }
-        .host-vans-list{
+        .vansaved-container{
             h4{
                 margin-top: 3em;
                 font-size: 1rem;
@@ -817,16 +817,16 @@ footer {
            font-size: 2rem;
         }
 
-        .host-vans-list{
-            h4{
-               font-size: 2rem;
-            }
-        }
         .vansaved-container{
             margin-top: 4em;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
+            h4{
+                font-size: 1.5em;
+                align-self: center;
+            }
         }
         .saved-van{
             margin-top: 1.5em;
@@ -1217,15 +1217,15 @@ footer {
            font-size: 3rem;
         }
 
-        .host-vans-list{
-            h4{
-               font-size: 2rem;
-            }
-        }
         .vansaved-container{
             margin-top: 4em;
             display: grid;
             grid-template-columns: repeat(3,1fr);
+
+            h4{
+                 grid-column: span 3;
+                font-size: 1.8em;
+            }
         }
         .saved-van{
             margin-top: 2em;
