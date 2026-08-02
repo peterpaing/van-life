@@ -431,7 +431,7 @@ main {
 }
     .vans-data {
         margin: 2em 0;
-        
+
         .filter{
             margin:1.5em 1em;
             display: flex;
@@ -918,6 +918,22 @@ footer {
         .vans-data {
             margin: 2em 0;
 
+             .filter{
+                    margin:4em 2em;
+                    display: flex;
+                    gap:1em;
+
+                    button{
+                        width: 170px;
+                        height: 40px;
+                        font-size: 1.3rem;
+                    }
+
+                    .clear{
+                      font-size: 1.5rem;
+                    }
+                }
+
             h2 {
                 margin-left: 2em;
                 font-size: 2.3rem;
@@ -951,10 +967,10 @@ footer {
                 }
             }
         }
-                .van-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .van-details {
+             display: flex;
+            flex-direction: column;
+             align-items: center;
 
 
         a {
@@ -1318,6 +1334,22 @@ footer {
         .vans-data {
             margin: 5em 0;
 
+             .filter{
+                    margin:4em 8em;
+                    display: flex;
+                    gap:1em;
+
+                    button{
+                        width: 200px;
+                        height: 40px;
+                        font-size: 1.3rem;
+                    }
+
+                    .clear{
+                      font-size: 1.5rem;
+                    }
+                }
+
             h2 {
                 margin-left: 3em;
                 font-size: 3rem;
@@ -1328,8 +1360,9 @@ footer {
                 grid-template-columns: repeat(3, 1fr);
                 row-gap: 6em;
 
-                .van-container {
-                    img {
+            .van-container {
+
+                 img {
                         width: 500px;
                         border-radius: 0.5em;
                     }
