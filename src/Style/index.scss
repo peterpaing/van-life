@@ -603,6 +603,54 @@ main {
             gap: 0.8em;
         }
     }
+
+    .login-page{
+        height:65vh;
+        color:$text-dark;
+
+        h4{
+            margin-top: 2em;
+           font-weight: 700;
+          font-size: 1.8rem;
+          text-align: center;
+        }
+
+        form{
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input{
+            width: 80%;
+            padding: 0.8em;
+            font-size: 1rem;
+            border-radius: 0.3em;
+            border: 1px solid $border-color;
+        }
+
+        button{
+            width: 80%;
+            margin-top: 2em;
+            padding:1em;
+            font-size: 1rem;
+            border-radius: 0.5em;
+            border: none;
+            background-color:$orange;
+            color:$bg-color;
+        }
+
+        p{
+            margin-top: 2em;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        span{
+            color:$orange;
+        }
+    }
 }
 
 footer {

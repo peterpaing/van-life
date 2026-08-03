@@ -9,6 +9,7 @@ import Dashboard from "./Pages/Dashboard"
 import Income from "./Pages/Income"
 import HostVans from "./Pages/HostVans"
 import Reviews from "./Pages/Reviews"
+import Login from "./Pages/Login"
 
 export default function App(){
 
@@ -20,6 +21,7 @@ export default function App(){
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} />
             <Route path="vans/:id" element={<VanDetails />} />
+            <Route path="login" element={<Login/>} />
 
             <Route path="host" element={<Host />}>
                 <Route index element={<Dashboard />} />
