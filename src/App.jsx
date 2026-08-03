@@ -10,6 +10,7 @@ import Income from "./Pages/Income"
 import HostVans from "./Pages/HostVans"
 import Reviews from "./Pages/Reviews"
 import Login from "./Pages/Login"
+import NotFound from "./Pages/NotFound"
 
 export default function App(){
 
@@ -22,7 +23,7 @@ export default function App(){
             <Route path="vans" element={<Vans />} />
             <Route path="vans/:id" element={<VanDetails />} />
             <Route path="login" element={<Login/>} />
-
+            <Route path="*" element={<NotFound/>} />
             <Route path="host" element={<Host />}>
                 <Route index element={<Dashboard />} />
                 <Route path="income" element={<Income />} />
@@ -30,6 +31,7 @@ export default function App(){
                 <Route path="reviews" element={<Reviews />} />
             </Route>
         </Route>
+        
     </Routes>
 </BrowserRouter>
     )
