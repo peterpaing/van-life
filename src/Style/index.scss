@@ -624,6 +624,7 @@ main {
 
         input{
             width: 80%;
+            max-width: 700px;
             padding: 0.8em;
             font-size: 1rem;
             border-radius: 0.3em;
@@ -632,6 +633,7 @@ main {
 
         button{
             width: 80%;
+            max-width: 700px;
             margin-top: 2em;
             padding:1em;
             font-size: 1rem;
@@ -1062,6 +1064,28 @@ footer {
            font-size: 1.8rem;
         }
     }
+    .login-page{
+        height:60.3vh;
+
+        h4{
+          margin-top: 3.5em;
+          font-size: 3rem;
+        }
+
+        input{
+           padding: 0.6em;
+            font-size: 1.3rem;
+        }
+
+        button{
+           font-size: 1.3rem;
+        }
+
+        p{
+          font-size: 1.3rem;
+        }
+
+    }
     }
 
     footer {
@@ -1484,6 +1508,29 @@ footer {
         .loading {
            font-size: 2rem;
         }
+    }
+
+    .login-page{
+        height:58.1vh;
+
+        h4{
+          margin-top: 5em;
+          font-size: 3rem;
+        }
+
+        input{
+           padding: 0.9em;
+            font-size: 1.5rem;
+        }
+
+        button{
+           font-size: 1.5rem;
+        }
+
+        p{
+          font-size: 1.5rem;
+        }
+
     }
     }
 
